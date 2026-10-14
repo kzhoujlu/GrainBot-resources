@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "release_tag": "2026.10.14.resources1",
+  "components": [
+    {
+      "component": "dataset-perovskite-boundary",
+      "kind": "dataset",
+      "name": "Prior-Guided SEM Grain Boundary Dataset",
+      "version": "2026.10.14.resources1",
+      "files": {
+        "dataset-perovskite-boundary.manifest.json": "aaf39556dcf9800cfae1b1574c36f38d1b10f442e2ae15802f7048e051476ba4",
+        "dataset-perovskite-boundary.manifest.sig": "5692ad14576f098341d1aa7762a98dd16bf23b4d9b1ad1e8bef6f02c392e9b3e"
+      }
+    },
+    {
+      "component": "dataset-perovskite-phase",
+      "kind": "dataset",
+      "name": "Prior-Guided SEM Material Phase Dataset",
+      "version": "2026.10.14.resources1",
+      "files": {
+        "dataset-perovskite-phase.manifest.json": "305187d0264a3dca690554f388bc02f2c1523048eee8ec8de87d7346942d81a1",
+        "dataset-perovskite-phase.manifest.sig": "60e6aeddbd673f03c40b1934598272052fe339c8d8ac495c113a9cb01f67b096"
+      }
+    },
+    {
+      "component": "dataset-tbm",
+      "kind": "dataset",
+      "name": "Texture Boundary in Metallography",
+      "version": "2026.10.14.resources1",
+      "files": {
+        "dataset-tbm.manifest.json": "0f866b2673d88e54d77ed8484bea311373d85c2bc2a5ab71602ff67f18978504",
+        "dataset-tbm.manifest.sig": "cde77e0e13dfa54ef845174c6f96a69d0bf867831d0205f99137b7c851258948"
+      }
+    },
+    {
+      "component": "dataset-uo2",
+      "kind": "dataset",
+      "name": "UO2 SEM-BSE Grain Boundary Dataset",
+      "version": "2026.10.14.resources1",
+      "files": {
+        "dataset-uo2.manifest.json": "65be5bbb43eb091a1c18c965d7966ceaf985604d552f9105585c7ecf3c62c97c",
+        "dataset-uo2.manifest.sig": "06c64d436b67514458d4e92300c5fff8d9c6da73e6e7eedfe61a593c1269b2e4"
+      }
+    },
+    {
+      "component": "model-bpartis",
+      "kind": "model",
+      "name": "EMPS BPartIS Official Adapter",
+      "version": "2026.10.14.resources1",
+      "files": {
+        "model-bpartis.manifest.json": "5c0f8545a85857a37e8cb0d6271cdea2e7313649910a7734b7b075525341bd99",
+        "model-bpartis.manifest.sig": "fa60c6a9633d5cea07d094db9c9cb7c5553291ec0900230ca7eaf5605fa7b223"
+      }
+    }
+  ]
+}

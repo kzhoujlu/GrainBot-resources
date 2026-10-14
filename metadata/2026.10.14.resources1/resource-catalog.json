@@ -1,0 +1,2327 @@
+{
+  "schema_version": "1.0",
+  "catalog_contract": "grainbot-resource-catalog-v1",
+  "version": "2026.10.14.resources1",
+  "repository": "kzhoujlu/GrainBot-resources",
+  "approved_numbers": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "unselected_numbers": [
+    2,
+    3,
+    9
+  ],
+  "release_url": "https://github.com/kzhoujlu/GrainBot-resources/releases/tag/2026.10.14.resources1",
+  "signing_public_key": "MoVe3/7LcXOFzcMdlQgFMqRir4usKxT1FFn4hehhuxw=",
+  "items": [
+    {
+      "id": "emps-bpartis-official-v1",
+      "component": "model-bpartis",
+      "type": "model",
+      "name": "EMPS BPartIS Official Adapter",
+      "description": "Reviewed MC30 BPartIS adapter; unchanged upstream weights acquired separately.",
+      "version": "2026.10.14.resources1",
+      "license": "LicenseRef-GrainBot-Project; upstream resources MIT",
+      "status": "published",
+      "publication_basis": "user-approved official EMPS publication",
+      "recommended": false,
+      "automatic_activation": false,
+      "assets": [
+        {
+          "type": "component_manifest",
+          "name": "model-bpartis.manifest.json",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/model-bpartis.manifest.json",
+          "bytes": 3713,
+          "sha256": "5c0f8545a85857a37e8cb0d6271cdea2e7313649910a7734b7b075525341bd99"
+        },
+        {
+          "type": "component_signature",
+          "name": "model-bpartis.manifest.sig",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/model-bpartis.manifest.sig",
+          "bytes": 88,
+          "sha256": "fa60c6a9633d5cea07d094db9c9cb7c5553291ec0900230ca7eaf5605fa7b223"
+        },
+        {
+          "type": "adapter_archive",
+          "name": "model-bpartis-2026.10.14.resources1.zip",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/model-bpartis-2026.10.14.resources1.zip",
+          "bytes": 1720,
+          "sha256": "33c2532cceede96e4a4d7461c350869bb8b5a596e009ccdf420414d68c8dd1bd"
+        }
+      ],
+      "resources": [
+        {
+          "target": "payload/external/imagedataextractor/models/seg-model.pt",
+          "sha256": "02b8224a95dc0e9b02c83200a7375e733abd91ac67a332bf887d3b2e00a85585",
+          "source": {
+            "provider": "github",
+            "repository": "by256/imagedataextractor",
+            "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+            "filename": "imagedataextractor/models/seg-model.pt"
+          },
+          "license": "MIT; Batuhan Yildirim, 2020",
+          "url": "https://raw.githubusercontent.com/by256/imagedataextractor/8a3a100521005ea31eff59fada388432c418d8d6/imagedataextractor/models/seg-model.pt",
+          "bytes": 9195219,
+          "anonymous_download_verified": true,
+          "type": "model_weights",
+          "model_id": "emps-bpartis-official-v1",
+          "upstream_owner": "Batuhan Yildirim; by256/imagedataextractor"
+        },
+        {
+          "target": "payload/external/imagedataextractor/segment/cluster.py",
+          "sha256": "7ddeae0838647c8bf6306413fea871ee6b6461ae4a313162d24144bfad891564",
+          "source": {
+            "provider": "github",
+            "repository": "by256/imagedataextractor",
+            "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+            "filename": "imagedataextractor/segment/cluster.py"
+          },
+          "license": "MIT; Batuhan Yildirim, 2020",
+          "url": "https://raw.githubusercontent.com/by256/imagedataextractor/8a3a100521005ea31eff59fada388432c418d8d6/imagedataextractor/segment/cluster.py",
+          "bytes": 3490,
+          "anonymous_download_verified": true,
+          "type": "model_implementation",
+          "model_id": "emps-bpartis-official-v1",
+          "upstream_owner": "Batuhan Yildirim; by256/imagedataextractor"
+        },
+        {
+          "target": "payload/external/imagedataextractor/segment/model.py",
+          "sha256": "2cc9621831ecab7ed17c613aea3f9ef455e162686b4e69617838120270c0c893",
+          "source": {
+            "provider": "github",
+            "repository": "by256/imagedataextractor",
+            "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+            "filename": "imagedataextractor/segment/model.py"
+          },
+          "license": "MIT; Batuhan Yildirim, 2020",
+          "url": "https://raw.githubusercontent.com/by256/imagedataextractor/8a3a100521005ea31eff59fada388432c418d8d6/imagedataextractor/segment/model.py",
+          "bytes": 5026,
+          "anonymous_download_verified": true,
+          "type": "model_implementation",
+          "model_id": "emps-bpartis-official-v1",
+          "upstream_owner": "Batuhan Yildirim; by256/imagedataextractor"
+        },
+        {
+          "target": "payload/external/imagedataextractor/segment/nnmodules.py",
+          "sha256": "07f631989e8dde1d3073a7cb58eb1adcbba320b989dbd10f0bc2471fc0ac3ca4",
+          "source": {
+            "provider": "github",
+            "repository": "by256/imagedataextractor",
+            "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+            "filename": "imagedataextractor/segment/nnmodules.py"
+          },
+          "license": "MIT; Batuhan Yildirim, 2020",
+          "url": "https://raw.githubusercontent.com/by256/imagedataextractor/8a3a100521005ea31eff59fada388432c418d8d6/imagedataextractor/segment/nnmodules.py",
+          "bytes": 6058,
+          "anonymous_download_verified": true,
+          "type": "model_implementation",
+          "model_id": "emps-bpartis-official-v1",
+          "upstream_owner": "Batuhan Yildirim; by256/imagedataextractor"
+        },
+        {
+          "target": "payload/external/imagedataextractor/segment/uncertainty.py",
+          "sha256": "d5e97435fa163a076cb3df428290f3f297e2821122c726da019c0bf0308a2ee2",
+          "source": {
+            "provider": "github",
+            "repository": "by256/imagedataextractor",
+            "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+            "filename": "imagedataextractor/segment/uncertainty.py"
+          },
+          "license": "MIT; Batuhan Yildirim, 2020",
+          "url": "https://raw.githubusercontent.com/by256/imagedataextractor/8a3a100521005ea31eff59fada388432c418d8d6/imagedataextractor/segment/uncertainty.py",
+          "bytes": 1048,
+          "anonymous_download_verified": true,
+          "type": "model_implementation",
+          "model_id": "emps-bpartis-official-v1",
+          "upstream_owner": "Batuhan Yildirim; by256/imagedataextractor"
+        },
+        {
+          "target": "payload/external/LICENSE",
+          "sha256": "a5e07317e7f0f4e9e3478d977e02c9add1dd592a82bf757a8e5403d9a0eb6322",
+          "source": {
+            "provider": "github",
+            "repository": "by256/imagedataextractor",
+            "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+            "filename": "LICENSE"
+          },
+          "license": "MIT; Batuhan Yildirim, 2020",
+          "url": "https://raw.githubusercontent.com/by256/imagedataextractor/8a3a100521005ea31eff59fada388432c418d8d6/LICENSE",
+          "bytes": 1073,
+          "anonymous_download_verified": true,
+          "type": "upstream_license",
+          "model_id": "emps-bpartis-official-v1",
+          "upstream_owner": "Batuhan Yildirim; by256/imagedataextractor"
+        }
+      ],
+      "upstream_owner": "Batuhan Yildirim",
+      "install_contract": "ComponentUpdates signed component API v1",
+      "studio_registration_required": true,
+      "approved_number": 1,
+      "distribution": "signed_adapter_with_pinned_official_resources"
+    },
+    {
+      "approved_number": 4,
+      "id": "perovskite-prior-sem-material-phase-v1",
+      "component": "dataset-perovskite-phase",
+      "type": "dataset",
+      "name": "Prior-Guided SEM Material Phase Dataset",
+      "description": "Repacked the installed MatMorph snapshot as a versioned data-only component. Existing image/annotation artifacts and split groups are preserved; GrainBot conversion provenance remains in dataset.json.",
+      "version": "2026.10.14.resources1",
+      "sample_count": 82,
+      "license": "CC-BY-4.0",
+      "upstream": {
+        "record_id": "21263625",
+        "doi": "10.5281/zenodo.21263625",
+        "url": "https://zenodo.org/records/21263625",
+        "creators": [
+          "Wang, Yixi"
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "modifications": "Repacked the installed MatMorph snapshot as a versioned data-only component. Existing image/annotation artifacts and split groups are preserved; GrainBot conversion provenance remains in dataset.json.",
+        "license_evidence": "https://api.datacite.org/dois/10.5281/zenodo.21263625"
+      },
+      "distribution": "signed_data_only_mirror",
+      "status": "published",
+      "assets": [
+        {
+          "name": "dataset-perovskite-phase.manifest.json",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-perovskite-phase.manifest.json",
+          "type": "component_manifest",
+          "bytes": 17917,
+          "sha256": "305187d0264a3dca690554f388bc02f2c1523048eee8ec8de87d7346942d81a1"
+        },
+        {
+          "name": "dataset-perovskite-phase.manifest.sig",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-perovskite-phase.manifest.sig",
+          "type": "component_signature",
+          "bytes": 88,
+          "sha256": "60e6aeddbd673f03c40b1934598272052fe339c8d8ac495c113a9cb01f67b096"
+        },
+        {
+          "name": "dataset-perovskite-phase-2026.10.14.resources1.zip",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/dataset-perovskite-phase-2026.10.14.resources1.zip",
+          "type": "dataset_archive",
+          "bytes": 36468021,
+          "sha256": "06b796edf3d59b3c05954971949d1079f0ae1c2b96836abba9d95dc417f7f043"
+        }
+      ],
+      "resources": [],
+      "automatic_activation": false,
+      "recommended": false,
+      "training_allowed": "retain_existing_review_policy",
+      "install_contract": "ComponentUpdates signed component API v1; payload/dataset.json; no dataset code execution"
+    },
+    {
+      "approved_number": 4,
+      "id": "perovskite-original-phase-boundaries-v2",
+      "component": "dataset-perovskite-boundary",
+      "type": "dataset",
+      "name": "Prior-Guided SEM Grain Boundary Dataset",
+      "description": "Repacked the installed MatMorph snapshot as a versioned data-only component. Existing image/annotation artifacts and split groups are preserved; GrainBot conversion provenance remains in dataset.json.",
+      "version": "2026.10.14.resources1",
+      "sample_count": 82,
+      "license": "CC-BY-4.0",
+      "upstream": {
+        "record_id": "21263625",
+        "doi": "10.5281/zenodo.21263625",
+        "url": "https://zenodo.org/records/21263625",
+        "creators": [
+          "Wang, Yixi"
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "modifications": "Repacked the installed MatMorph snapshot as a versioned data-only component. Existing image/annotation artifacts and split groups are preserved; GrainBot conversion provenance remains in dataset.json.",
+        "license_evidence": "https://api.datacite.org/dois/10.5281/zenodo.21263625"
+      },
+      "distribution": "signed_data_only_mirror",
+      "status": "published",
+      "assets": [
+        {
+          "name": "dataset-perovskite-boundary.manifest.json",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-perovskite-boundary.manifest.json",
+          "type": "component_manifest",
+          "bytes": 17924,
+          "sha256": "aaf39556dcf9800cfae1b1574c36f38d1b10f442e2ae15802f7048e051476ba4"
+        },
+        {
+          "name": "dataset-perovskite-boundary.manifest.sig",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-perovskite-boundary.manifest.sig",
+          "type": "component_signature",
+          "bytes": 88,
+          "sha256": "5692ad14576f098341d1aa7762a98dd16bf23b4d9b1ad1e8bef6f02c392e9b3e"
+        },
+        {
+          "name": "dataset-perovskite-boundary-2026.10.14.resources1.zip",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/dataset-perovskite-boundary-2026.10.14.resources1.zip",
+          "type": "dataset_archive",
+          "bytes": 36418886,
+          "sha256": "311cfb75e2f6e15834b9e682cafad3d38bd2092583b25f708665eb456923a096"
+        }
+      ],
+      "resources": [],
+      "automatic_activation": false,
+      "recommended": false,
+      "training_allowed": "retain_existing_review_policy",
+      "install_contract": "ComponentUpdates signed component API v1; payload/dataset.json; no dataset code execution"
+    },
+    {
+      "approved_number": 5,
+      "id": "uo2-sem-bse-grain-boundaries",
+      "component": "dataset-uo2",
+      "type": "dataset",
+      "name": "UO2 SEM-BSE Grain Boundary Dataset",
+      "description": "Repacked the installed MatMorph snapshot as a versioned data-only component. Existing image/annotation artifacts and split groups are preserved; GrainBot conversion provenance remains in dataset.json.",
+      "version": "2026.10.14.resources1",
+      "sample_count": 37,
+      "license": "CC-BY-4.0",
+      "upstream": {
+        "record_id": "17986530",
+        "doi": "10.5281/zenodo.17986530",
+        "url": "https://zenodo.org/records/17986530",
+        "creators": [
+          "Zhao, Pengru",
+          "Germain, Lionel",
+          "Sur, Frédéric",
+          "GEY, Nathalie",
+          "LE GOFF, Xavier",
+          "Iltis, Xavière"
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "modifications": "Repacked the installed MatMorph snapshot as a versioned data-only component. Existing image/annotation artifacts and split groups are preserved; GrainBot conversion provenance remains in dataset.json.",
+        "license_evidence": "https://api.datacite.org/dois/10.5281/zenodo.17986530"
+      },
+      "distribution": "signed_data_only_mirror",
+      "status": "published",
+      "assets": [
+        {
+          "name": "dataset-uo2.manifest.json",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-uo2.manifest.json",
+          "type": "component_manifest",
+          "bytes": 10009,
+          "sha256": "65be5bbb43eb091a1c18c965d7966ceaf985604d552f9105585c7ecf3c62c97c"
+        },
+        {
+          "name": "dataset-uo2.manifest.sig",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-uo2.manifest.sig",
+          "type": "component_signature",
+          "bytes": 88,
+          "sha256": "06c64d436b67514458d4e92300c5fff8d9c6da73e6e7eedfe61a593c1269b2e4"
+        },
+        {
+          "name": "dataset-uo2-2026.10.14.resources1.zip",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/dataset-uo2-2026.10.14.resources1.zip",
+          "type": "dataset_archive",
+          "bytes": 128248171,
+          "sha256": "45f57a18bdd702a865bc716f3a348e85c745be57f23b919a406e942e9c2d9b38"
+        }
+      ],
+      "resources": [],
+      "automatic_activation": false,
+      "recommended": false,
+      "training_allowed": "retain_existing_review_policy",
+      "install_contract": "ComponentUpdates signed component API v1; payload/dataset.json; no dataset code execution"
+    },
+    {
+      "approved_number": 6,
+      "id": "texture-boundary-in-metallography-tbm",
+      "component": "dataset-tbm",
+      "type": "dataset",
+      "name": "Texture Boundary in Metallography",
+      "description": "Repacked 320 existing image/annotation pairs into MatMorph data-only schema. Preserved supplied expert thin/inverted labels separately from GrainBot Otsu-derived boundary-positive masks. No morphology is added. Training remains blocked.",
+      "version": "2026.10.14.resources1",
+      "sample_count": 320,
+      "license": "CC-BY-4.0",
+      "upstream": {
+        "record_id": "8386997",
+        "doi": "10.5281/zenodo.8386997",
+        "url": "https://zenodo.org/records/8386997",
+        "creators": [
+          "Anonymous"
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "modifications": "Repacked 320 existing image/annotation pairs into MatMorph data-only schema. Preserved supplied expert thin/inverted labels separately from GrainBot Otsu-derived boundary-positive masks. No morphology is added. Training remains blocked.",
+        "license_evidence": "https://api.datacite.org/dois/10.5281/zenodo.8386997"
+      },
+      "distribution": "signed_data_only_mirror",
+      "status": "published",
+      "assets": [
+        {
+          "name": "dataset-tbm.manifest.json",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-tbm.manifest.json",
+          "type": "component_manifest",
+          "bytes": 114367,
+          "sha256": "0f866b2673d88e54d77ed8484bea311373d85c2bc2a5ab71602ff67f18978504"
+        },
+        {
+          "name": "dataset-tbm.manifest.sig",
+          "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/dataset-tbm.manifest.sig",
+          "type": "component_signature",
+          "bytes": 88,
+          "sha256": "cde77e0e13dfa54ef845174c6f96a69d0bf867831d0205f99137b7c851258948"
+        },
+        {
+          "name": "dataset-tbm-2026.10.14.resources1.zip",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/dataset-tbm-2026.10.14.resources1.zip",
+          "type": "dataset_archive",
+          "bytes": 13252127,
+          "sha256": "47343ae22a8cb98c495e433b89ada7e2a75e857186ea27267cef5b6377635959"
+        }
+      ],
+      "resources": [],
+      "automatic_activation": false,
+      "recommended": false,
+      "training_allowed": false,
+      "install_contract": "ComponentUpdates signed component API v1; payload/dataset.json; no dataset code execution"
+    },
+    {
+      "approved_number": 5,
+      "id": "uo2-sem-bse-official-models",
+      "type": "model",
+      "name": "Official UO2 SEM-BSE Models",
+      "description": "Unchanged official B, B_SyntExp, DS and HED checkpoints, with separately packaged original implementation. Weights are not bundled into the application or dataset.",
+      "version": "2026.10.14.resources1",
+      "license": "CC-BY-4.0",
+      "upstream": {
+        "record_id": "17986530",
+        "doi": "10.5281/zenodo.17986530",
+        "url": "https://zenodo.org/records/17986530",
+        "creators": [
+          "Zhao, Pengru",
+          "Germain, Lionel",
+          "Sur, Frédéric",
+          "GEY, Nathalie",
+          "LE GOFF, Xavier",
+          "Iltis, Xavière"
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "modifications": "Published the unchanged official checkpoint files separately from the implementation code; no retraining or scientific promotion.",
+        "license_evidence": "https://api.datacite.org/dois/10.5281/zenodo.17986530"
+      },
+      "distribution": "separate_weights_and_implementation",
+      "status": "published",
+      "assets": [
+        {
+          "name": "uo2-implementation-2026.10.14.resources1.zip",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/uo2-implementation-2026.10.14.resources1.zip",
+          "type": "model_implementation_archive",
+          "bytes": 18334,
+          "sha256": "09652efb87c4693fba18d28116f21a177f3b0bdd13c46e7e3096718b02977516"
+        }
+      ],
+      "resources": [
+        {
+          "name": "uo2-b-2026.10.14.resources1.pt",
+          "type": "model_weights",
+          "model_id": "uo2-sem-bse-b",
+          "original_filename": "B.pt",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/uo2-b-2026.10.14.resources1.pt",
+          "bytes": 260605043,
+          "sha256": "61651e5748c745a821636789a1f208c4f0d797e043e17cefc6d7297471dfbf2f",
+          "license": "CC-BY-4.0",
+          "upstream_owner": [
+            "Zhao, Pengru",
+            "Germain, Lionel",
+            "Sur, Frédéric",
+            "GEY, Nathalie",
+            "LE GOFF, Xavier",
+            "Iltis, Xavière"
+          ],
+          "installation_target": "models/uo2-sem-bse-official/Models/B/B.pt"
+        },
+        {
+          "name": "uo2-b-syntexp-2026.10.14.resources1.pt",
+          "type": "model_weights",
+          "model_id": "uo2-sem-bse-b_syntexp",
+          "original_filename": "B_SyntExp.pt",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/uo2-b-syntexp-2026.10.14.resources1.pt",
+          "bytes": 260605043,
+          "sha256": "6c8def2ef406a29e2c8f6cafcad6106238adb49c894792bfe9f52a74635d6f43",
+          "license": "CC-BY-4.0",
+          "upstream_owner": [
+            "Zhao, Pengru",
+            "Germain, Lionel",
+            "Sur, Frédéric",
+            "GEY, Nathalie",
+            "LE GOFF, Xavier",
+            "Iltis, Xavière"
+          ],
+          "installation_target": "models/uo2-sem-bse-official/Models/B_SyntExp/B_SyntExp.pt"
+        },
+        {
+          "name": "uo2-ds-2026.10.14.resources1.pt",
+          "type": "model_weights",
+          "model_id": "uo2-sem-bse-ds",
+          "original_filename": "DS.pt",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/uo2-ds-2026.10.14.resources1.pt",
+          "bytes": 260607779,
+          "sha256": "af8ca16790a616024bcd8244ae259bc7162bc7da9e09ef667cb6d1d433a5b19d",
+          "license": "CC-BY-4.0",
+          "upstream_owner": [
+            "Zhao, Pengru",
+            "Germain, Lionel",
+            "Sur, Frédéric",
+            "GEY, Nathalie",
+            "LE GOFF, Xavier",
+            "Iltis, Xavière"
+          ],
+          "installation_target": "models/uo2-sem-bse-official/Models/DS/DS.pt"
+        },
+        {
+          "name": "uo2-hed-2026.10.14.resources1.pt",
+          "type": "model_weights",
+          "model_id": "uo2-sem-bse-hed",
+          "original_filename": "HED.pt",
+          "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.14.resources1/uo2-hed-2026.10.14.resources1.pt",
+          "bytes": 136788971,
+          "sha256": "71937fcc136e2b1c649ba3428e9d674cbfd14ac55dba4be5bf7b1ccfc1e8eb07",
+          "license": "CC-BY-4.0",
+          "upstream_owner": [
+            "Zhao, Pengru",
+            "Germain, Lionel",
+            "Sur, Frédéric",
+            "GEY, Nathalie",
+            "LE GOFF, Xavier",
+            "Iltis, Xavière"
+          ],
+          "installation_target": "models/uo2-sem-bse-official/Models/HED/HED.pt"
+        }
+      ],
+      "implementation_file_hashes": {
+        "Code/Dataset.py": "8b549f79a0ab7f6750ba37c8ad23b18ef1eea468bfa8e509f68936c6535f6e7d",
+        "Code/Engine.py": "d21d100321989bbd893a7f5ed3b9cad9c92e7356d61b62f3caba97aeedc333f3",
+        "Code/Eval.py": "e8adde0a1ccc2a299d1373f44e431df4b5a7fa19957feb68c3802be608b80768",
+        "Code/LossFN.py": "deb5fa342ed46c461d7961d6117445bbeff438b9d44bc42660a94b1ca076f594",
+        "Code/ModelEval.py": "e75a74e2a766d6c72787277cf92e8cd328c92b6aac39b94345947e1820302fb2",
+        "Code/Models.py": "eede2835331c487c37e1a0f6fc01e2c8b799780ee25cc7a13ea9d7c3cb684acf",
+        "Code/Prep.py": "68d989aa9fbf9657f026736dcf54c447a4d1afa9269ddc1d9d8f32e5297e095f",
+        "Code/SyntDataGen.py": "aaef60b3e541d9f05c95be3a358fc7e57b0de211453f9a3e300526b3a209f1b3",
+        "Code/SyntheticData.py": "8c2a9e0b0e0a9d101f0b2c5ffcef86d8e782bce42f40aff571c36f8577767fc5",
+        "Code/Test.py": "c6966b40c930d601463200597ace08ea11194c4d0d16ee36ab4ba146261402b6",
+        "Code/Train.py": "47478c4b2bca64bbe5701fa8b9c85dfec15cf5a2f5e3a88e9f9037822143c40d"
+      },
+      "automatic_activation": false,
+      "recommended": false,
+      "install_contract": "resource-catalog-v1 pinned GitHub Release assets; verify SHA256 and trusted catalog signature; place separate checkpoints under Models and implementation under Code; existing ComponentUpdates resources.py does not implement this provider"
+    },
+    {
+      "approved_number": 7,
+      "id": "bf-tem-patrick-official",
+      "type": "model_and_dataset",
+      "name": "Patrick BF-TEM U-Net Official",
+      "description": "Official aluminum BF-TEM U-Net and train/validation/test data; obtain from Redivis under the upstream terms.",
+      "version": "1.0",
+      "status": "official_source_only_license_unverified",
+      "distribution": "manual_official_source",
+      "license": "Redivis dataset terms; redistribution unverified",
+      "upstream_owner": "Patrick et al.; official Redivis dataset contributors",
+      "landing_url": "https://columbia.redivis.com/datasets/ezwc-6yhc9b71p?v=1.0",
+      "doi": "10.57783/w6n3-5b02",
+      "resources": [
+        {
+          "name": "unet_grain_nouveaux_pretune.hdf5",
+          "bytes": 372613120,
+          "upstream_md5": "8fb736d7115f5afde53e51d1189b7cc1",
+          "type": "model_weights",
+          "download_mode": "manual_official_source",
+          "url": null,
+          "landing_url": "https://columbia.redivis.com/datasets/ezwc-6yhc9b71p?v=1.0",
+          "anonymous_download_verified": false,
+          "mirror": false,
+          "sha256": "5a764c8155c50a359190655d5b18c8b199f5c69daba40dc8c9979174d17eef7b",
+          "sha256_basis": "existing local official download; not a public mirror"
+        },
+        {
+          "name": "training_validation_data.zip",
+          "bytes": 2753565877,
+          "upstream_md5": "c910f2d1058c2f9222a5c62430b551a6",
+          "type": "dataset_archive",
+          "download_mode": "manual_official_source",
+          "url": null,
+          "landing_url": "https://columbia.redivis.com/datasets/ezwc-6yhc9b71p?v=1.0",
+          "anonymous_download_verified": false,
+          "mirror": false,
+          "sha256": "6f3148ecd659a582ea09f43d91d2d08ef1be6e63310a8bae3032704b944617d8",
+          "sha256_basis": "existing local official download; not a public mirror"
+        },
+        {
+          "name": "test_data.zip",
+          "bytes": 2499401665,
+          "upstream_md5": "1629ca840f79c099e041afef0b985507",
+          "type": "dataset_archive",
+          "download_mode": "manual_official_source",
+          "url": null,
+          "landing_url": "https://columbia.redivis.com/datasets/ezwc-6yhc9b71p?v=1.0",
+          "anonymous_download_verified": false,
+          "mirror": false,
+          "sha256": "08300a4ccac5c238fe489525bd1cc2b85b7d8cd016065d87c8239fbb19ed8e5f",
+          "sha256_basis": "existing local official download; not a public mirror"
+        }
+      ],
+      "automatic_activation": false,
+      "recommended": false,
+      "requires_upstream_access": true
+    },
+    {
+      "approved_number": 8,
+      "id": "grainbot-v2-original-resources",
+      "type": "official_resources",
+      "name": "Original GrainBot and GrainBot-V2 Resources",
+      "description": "Pinned official GrainBot-V2 source and its original 50-pair dataset. No raw files are mirrored; obtain model weights from the upstream author instructions.",
+      "version": "785576283f3af640dc2f8835a465237224104f1d",
+      "status": "official_source_only_license_unverified",
+      "distribution": "official_source",
+      "license": "No license detected in upstream repository; redistribution unverified",
+      "upstream_owner": "yalan-z/GrainBot-V2 contributors",
+      "landing_url": "https://github.com/yalan-z/GrainBot-V2/tree/785576283f3af640dc2f8835a465237224104f1d",
+      "resources": [
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/1.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/1.jpg",
+          "bytes": 16457,
+          "sha256": "c84747125ff888d64178f8af9b2f2926e86ff9fa9b1c418e073782e85e6a7e19",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/1.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/10.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/10.jpg",
+          "bytes": 16360,
+          "sha256": "11a1d967f08a3deea7582e66c327e4fab455e5bf4fb89f209a79596ee68f741c",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/10.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/11.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/11.jpg",
+          "bytes": 13830,
+          "sha256": "fe34355408b99143ce6396ef72d55117be00dc41e543cb0c1670f29bebce1076",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/11.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/12.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/12.jpg",
+          "bytes": 10783,
+          "sha256": "1b40e0aa2a5913ea8de109b7fcc2606b62fb65bda572d4fd5f631cbf8386bb37",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/12.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/13.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/13.jpg",
+          "bytes": 10994,
+          "sha256": "1d70eb16a08241f0c3a13e5203b97243367209dc847cd93a77fa89ddee8a1982",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/13.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/14.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/14.jpg",
+          "bytes": 10866,
+          "sha256": "01ec02b3dd8a32eaf760a3f889d7d77a7844aeab27feb161032c0f72a95ee5f4",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/14.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/15.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/15.jpg",
+          "bytes": 11486,
+          "sha256": "a7c4ba19c8aa6f95ebd099b3871f099fed03969a5e57c660caf5049fb57ce139",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/15.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/16.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/16.jpg",
+          "bytes": 13243,
+          "sha256": "5f8a25b7ef348c8d8f83d1427c055f12346231ccb10a589aeef14c77930db5b1",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/16.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/17.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/17.jpg",
+          "bytes": 13130,
+          "sha256": "9ee8469e586d594b742cca6735e78a12e5333792effe41b3f475bbb303c140a3",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/17.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/18.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/18.jpg",
+          "bytes": 13037,
+          "sha256": "cdcf3aec5af232438077b3309f6be26e4708476473138d743cb22e3442dfaa62",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/18.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/19.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/19.jpg",
+          "bytes": 13237,
+          "sha256": "48327912934ed9e556b17e66e3c8b0988ccb2788697a30e0af5c192e40d25b35",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/19.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/2.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/2.jpg",
+          "bytes": 16677,
+          "sha256": "f0b9c36875ab19657074f2735db7503d161249919749eceb53b197e765946210",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/2.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/20.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/20.jpg",
+          "bytes": 13775,
+          "sha256": "0ec6c5482ef15a0c9c20eeda0e299abefaaf032505655ec4c2c40cea563394a8",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/20.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/21.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/21.jpg",
+          "bytes": 13334,
+          "sha256": "ef90c263879e1fb20cf2cc107458fc2d652f09d3a48e740567dbbdb923f65c2c",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/21.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/22.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/22.jpg",
+          "bytes": 13903,
+          "sha256": "cff1af329da7c3b0dbfd1d69447319835046b3c3dc171467c1c71c7fad562d29",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/22.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/23.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/23.jpg",
+          "bytes": 17123,
+          "sha256": "0e05458b5bbe3416767ce2f1d803a23bc08c6e0c9de494d7f9aff216087418b1",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/23.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/24.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/24.jpg",
+          "bytes": 18844,
+          "sha256": "44065be0e2e7e92020d9366a74eaedef22fa8451109941a16a6294514f602099",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/24.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/25.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/25.jpg",
+          "bytes": 19342,
+          "sha256": "c4a5f72a8337fb402220f93aa051f05d2e8fe8d03e9e3917c6e2f66178eb6492",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/25.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/26.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/26.jpg",
+          "bytes": 18744,
+          "sha256": "8f02971148eccfad57a13847e2a75c4dbcd6e527f13c3f6980746d7df88c9886",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/26.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/27.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/27.jpg",
+          "bytes": 18794,
+          "sha256": "741485507a8008a40fe7680dd8c22305c376246dc826c3779ed206245ca0dab3",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/27.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/28.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/28.jpg",
+          "bytes": 21306,
+          "sha256": "f27aa57cf4739bbbdf4e761020fe556843857a7e3f9a14dccde520c3516a6ad4",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/28.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/29.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/29.jpg",
+          "bytes": 21548,
+          "sha256": "cf399d66c7ba68ffbcb9ce963fdf05cd5d8b4309b634ad2dcccfd2344faec0b9",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/29.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/3.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/3.jpg",
+          "bytes": 15350,
+          "sha256": "5389e261b18cfea3950ca83931c6218fa71f81aad8287bd9825b471c55008e58",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/3.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/30.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/30.jpg",
+          "bytes": 21584,
+          "sha256": "5aa3830594b5e21a5d470aa51e1f53acf98ee2fd4a8cea80213abbeddb8576f5",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/30.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/31.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/31.jpg",
+          "bytes": 21740,
+          "sha256": "e30651fc3939b1a31e75c01dd16b08a972d9b58529b06df403b35b9cb5e54d28",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/31.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/32.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/32.jpg",
+          "bytes": 11712,
+          "sha256": "c7fc7c06365328422addfe4259b1db3d966c13a061c4c69f64bf2e28d23a9f13",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/32.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/33.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/33.jpg",
+          "bytes": 11429,
+          "sha256": "7f32d69d6d6f983af055c43dec4716f02bf3e164ae6a3ba71298bf7055aab674",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/33.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/34.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/34.jpg",
+          "bytes": 11501,
+          "sha256": "be4411033c316ef6da14581d73f4f72db95fda9ea1490d24195c6d2cc69fbf66",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/34.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/35.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/35.jpg",
+          "bytes": 12534,
+          "sha256": "0e512684ed75440fde94f7a02c4ae0c848f9a46d1f6e23e0f27bdd474a19a8c5",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/35.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/36.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/36.jpg",
+          "bytes": 18355,
+          "sha256": "8123940cd51fc392310e771bccad3c02580638d40d8452e477842344881a1bf3",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/36.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/37.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/37.jpg",
+          "bytes": 18241,
+          "sha256": "03bb8ceadc1827ff9dd8202a0938f0b9d54010d1321003df1baf95a34280cebe",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/37.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/38.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/38.jpg",
+          "bytes": 19106,
+          "sha256": "934b0a126917012bf95e02cf257dd9ff81f663a9c3799800eaa351afe1d3e775",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/38.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/39.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/39.jpg",
+          "bytes": 19390,
+          "sha256": "660b5b3c98034cec1498b2d91ec9ce785a8854e635feb8746403b0a2a2ed4b58",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/39.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/4.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/4.jpg",
+          "bytes": 15118,
+          "sha256": "611b19be9290d50bf527c35f89440e23c57294d37a56f9d547ccaffa50b65a8a",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/4.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/40.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/40.jpg",
+          "bytes": 49760,
+          "sha256": "fc6ad9043ddbb169235d4403981f106286c99cc3d94137ead4561d5569676a77",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/40.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/41.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/41.jpg",
+          "bytes": 47835,
+          "sha256": "1581110f73af47196b0f992ff70e85d2a3c7f1aee4917c8979f6126fbb5a5d14",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/41.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/42.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/42.jpg",
+          "bytes": 47800,
+          "sha256": "d8d5dbe2b54ee8f45e27acedbaf7d689be7bdc3e15f3cfefd31fe6e70cdf817c",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/42.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/43.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/43.jpg",
+          "bytes": 43085,
+          "sha256": "f6c9c3d5a5119d9c2737dc8bc713694fbb7648a7b21cf38535a5677c05cb9c09",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/43.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/44.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/44.jpg",
+          "bytes": 41822,
+          "sha256": "5bb8ba798083bac6a7d565ff53cb7958b37ad8dccee1e468c1a426374cae128e",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/44.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/45.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/45.jpg",
+          "bytes": 42375,
+          "sha256": "df3fabbcc1dac675c8a925a41019f94563b8d98b7838733dead2c06856bff1a9",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/45.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/46.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/46.jpg",
+          "bytes": 39334,
+          "sha256": "7263230597c4f45e578c301d8b4438f376562d34fe6776aa57ce92a89d87d786",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/46.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/47.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/47.jpg",
+          "bytes": 31745,
+          "sha256": "6bc8377bdc0c0fa992e1b0f7fc2657ee98d39f120cbb518543bb575884e1f35b",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/47.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/48.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/48.jpg",
+          "bytes": 34752,
+          "sha256": "e6dd5bafa91eace6cad3ca977a266e9e634408b6e96616797eaa15451d0e356d",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/48.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/49.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/49.jpg",
+          "bytes": 33048,
+          "sha256": "0e8de80d69f231f115489d4780523810d481f015607f3acd98223d2c07a8952f",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/49.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/5.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/5.jpg",
+          "bytes": 14664,
+          "sha256": "64a31535210639c01d9c381432af61b72bac3b77665a150f7bf72fddef50e953",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/5.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/50.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/50.jpg",
+          "bytes": 26186,
+          "sha256": "3498e97c0936e9d950721796517fb3caa6b0db7150db64d4828ea8b712d5b699",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/50.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/6.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/6.jpg",
+          "bytes": 14538,
+          "sha256": "e5153086ef3d92f4c52cc4eec710bd5e631ab1036651a09f5f9b7a0573bca243",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/6.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/7.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/7.jpg",
+          "bytes": 16579,
+          "sha256": "ac074e998de2aff7cca698db318a911aecd7f956682c4f1dd4e7007c4a7d53f8",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/7.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/8.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/8.jpg",
+          "bytes": 16517,
+          "sha256": "d9dff4857d25f1ee377d25d3bd87164f7cde629f7e5b9a92e8ed97f33552bd3a",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/8.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_image",
+          "name": "data/JPEGImages/9.jpg",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/JPEGImages/9.jpg",
+          "bytes": 16419,
+          "sha256": "9e40063d33b8170d8e88b0c4d982084870d446902c20891129f6555f4be6ce24",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/JPEGImages/9.jpg"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/1.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/1.png",
+          "bytes": 10161,
+          "sha256": "53725a7794a6512ce8b0407c311e5f2d2007ff1839d4ecbf5b9c5680433817d1",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/1.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/10.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/10.png",
+          "bytes": 9479,
+          "sha256": "38ef4006e556bd664667fa3274139faf40c5065c7c8c9c1c8b3167383a437536",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/10.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/11.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/11.png",
+          "bytes": 8073,
+          "sha256": "0bb6bd95d311ac64eeaaa66665ad37c141be97b45aa9a024aa6a3ac55cc21e92",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/11.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/12.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/12.png",
+          "bytes": 6808,
+          "sha256": "e26e41b8245f555a72f2daab993aaa01c8ce43227b528335477631a337a36035",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/12.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/13.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/13.png",
+          "bytes": 7570,
+          "sha256": "87f342c916f2cddd64639e92268bf732345bdb7a6c8bd065a74f60f83c65633a",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/13.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/14.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/14.png",
+          "bytes": 8269,
+          "sha256": "c30ee667baefd6bcad9f8fad3f74c6cd4c88e3fd99361593ee99ad096ebae14a",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/14.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/15.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/15.png",
+          "bytes": 8919,
+          "sha256": "b738fdfd25be511842718fad9e37b969fe998cd692f87ebe20adc3ea521d8476",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/15.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/16.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/16.png",
+          "bytes": 7972,
+          "sha256": "3ff962a58ce576bf4ad273c8c62fbaa92397bae0426b3d8f8483ecb47321a8d0",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/16.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/17.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/17.png",
+          "bytes": 10744,
+          "sha256": "81f0fe5b6c1501c348ff1ab2e91617d499dcb66920b80fb651255936c1f1d3f0",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/17.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/18.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/18.png",
+          "bytes": 10064,
+          "sha256": "d5a31ef211d774b17e64893f51a7b83d91d16ee30cce99c4fb84ff4609d775c6",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/18.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/19.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/19.png",
+          "bytes": 10780,
+          "sha256": "c2e1c754cb248beb458f74f6755cbc66f0c7f7fd9da08f3bbe7fc57c5e761925",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/19.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/2.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/2.png",
+          "bytes": 8836,
+          "sha256": "b43cde6e7b7b145660095129d8717e6eb556f6c1c5c46dccf44800bd5d16b7a9",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/2.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/20.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/20.png",
+          "bytes": 9681,
+          "sha256": "082f06dfe62b57aaa64bb0fb5a394b66ad6578753a2b2ea2745d5190943fe5e7",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/20.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/21.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/21.png",
+          "bytes": 9288,
+          "sha256": "a33bfcc5412ee1655b2f90252a0300fb78cf688a8cee2668810973858d8ac55c",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/21.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/22.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/22.png",
+          "bytes": 9827,
+          "sha256": "d81d11964766dd8d4ae0d3d1f63a9722363dd7ca83efb31488a19a7bcbe35a58",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/22.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/23.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/23.png",
+          "bytes": 11451,
+          "sha256": "266bf51658eacddde146c5ab9cd6c25daab62998ecadeb100ee4ee3b857bf563",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/23.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/24.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/24.png",
+          "bytes": 29086,
+          "sha256": "394ff383d8b912e456b9c836866bb9b91b59cd0b59bab03464553ba6faebedb1",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/24.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/25.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/25.png",
+          "bytes": 29110,
+          "sha256": "5a3a6e510088edb41cea89c4fa0506abf07296f79107676b078afffdb715ed08",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/25.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/26.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/26.png",
+          "bytes": 26259,
+          "sha256": "fed8f24763c414a57971378f2316dae20adaf054cebe3e797972d367d5f5dde2",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/26.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/27.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/27.png",
+          "bytes": 24769,
+          "sha256": "3511e41be22f73db01161376d3cc6cc08747e7557972c39a7026fead1e0a60dc",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/27.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/28.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/28.png",
+          "bytes": 28068,
+          "sha256": "c30c79e7faa87c79cfca03468f34c91cbe4e5364272185b5762614a02326662a",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/28.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/29.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/29.png",
+          "bytes": 26821,
+          "sha256": "367353266c1e24b686126835c5e997466521de4229e03f9cf06ad6db3f76bb7b",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/29.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/3.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/3.png",
+          "bytes": 10585,
+          "sha256": "b0a02fb52a724c1dd1cc2c5bab34d7b6fb0053ee899247b93a7a8f77d5fa37ec",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/3.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/30.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/30.png",
+          "bytes": 29079,
+          "sha256": "bcaf5b7a35e618623e6d065537e727ddcb22a487fcc78993c455973f2d33b715",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/30.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/31.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/31.png",
+          "bytes": 29042,
+          "sha256": "566c6655e3da344efd45b19f6f629d4c6d42b6610ceb7e5670730f452796630f",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/31.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/32.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/32.png",
+          "bytes": 32459,
+          "sha256": "255f0e49b1cb56e6723fff01e5a90dc2d00e0557fcb8c6803515a0bc1033d0a3",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/32.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/33.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/33.png",
+          "bytes": 31192,
+          "sha256": "750ce8aeecc1b56036fea40935007ee1fba7e7faa7a981a494e32c3e9852f1d5",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/33.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/34.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/34.png",
+          "bytes": 29555,
+          "sha256": "c4cba17129e4462dd0a3a1c418c1c124eaa63df7927c5ba8de9a9b01fc0c84d9",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/34.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/35.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/35.png",
+          "bytes": 28914,
+          "sha256": "f55d13a83952a91d9a4c7c9c45ef504e2f881609997edcd265f01b61e38bf20c",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/35.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/36.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/36.png",
+          "bytes": 28704,
+          "sha256": "7dfe342a59fca6a44a9abb1a83233e2fb51d3ce336979734dead2c5bd267e8f3",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/36.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/37.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/37.png",
+          "bytes": 30386,
+          "sha256": "6037655ae4de30ee7344aadc0f7aac7d13301a11e6b4e72e0ef093d68088e3cc",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/37.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/38.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/38.png",
+          "bytes": 31358,
+          "sha256": "59bee2df714db4247d5acbfaad845b41869faa96311c0ced2eca0a0fda402d83",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/38.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/39.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/39.png",
+          "bytes": 31545,
+          "sha256": "765ad17a75ce8442b0730062f005447b5e7a4c08cbc029ddef5b7303def6e5f9",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/39.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/4.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/4.png",
+          "bytes": 11634,
+          "sha256": "05dd3b7de75fab72cd3420e3ca80ee06962821c15112f39025c0a44238d7f1d0",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/4.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/40.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/40.png",
+          "bytes": 14175,
+          "sha256": "35921f0d36ab56cd2872ff4ed4920bb87c10675925b67dd37d2f07ab6e706748",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/40.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/41.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/41.png",
+          "bytes": 13803,
+          "sha256": "77a218420bea5370b46af14121191c81304c327a123517906531ecd64c5a6334",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/41.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/42.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/42.png",
+          "bytes": 15748,
+          "sha256": "e43df3ba1182f162d6eba928ed46f37aeb335a21243fb83efeabca295285472d",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/42.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/43.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/43.png",
+          "bytes": 13831,
+          "sha256": "d25ebf5087c17b458c39acd1d6d0286f1e82488a313dad180df30d9e1a7337c5",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/43.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/44.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/44.png",
+          "bytes": 14220,
+          "sha256": "2eb862e172929c8668a2050471dfb35ac827d89c784df183e7a87412c2772882",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/44.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/45.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/45.png",
+          "bytes": 13338,
+          "sha256": "13a70287c119e4acb29fe3f335883d98ec6372c319c4fad07be76368c46db91f",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/45.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/46.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/46.png",
+          "bytes": 12737,
+          "sha256": "4cfe37e51443e0a127c6127ad4bb3bc441db499a07fe6d7d44e1abf4bc95c98b",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/46.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/47.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/47.png",
+          "bytes": 10966,
+          "sha256": "0f8869624081c25b8126c11839dd250af084e418ab8000992bd4732e1b21d46a",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/47.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/48.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/48.png",
+          "bytes": 12153,
+          "sha256": "61535b4a5ad7af9ef3fe87c0ac3bc458210407afc4697feea5e47b852cdee340",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/48.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/49.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/49.png",
+          "bytes": 11863,
+          "sha256": "127fab51c39154aae9c16e00a82045fb02586e9b2eb70731b2d5c14551fac02b",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/49.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/5.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/5.png",
+          "bytes": 10304,
+          "sha256": "e6542fd8bf0dc772aef1d66fe3b284d49e7bae21e0acc5b70db7999192f7ed78",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/5.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/50.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/50.png",
+          "bytes": 12253,
+          "sha256": "321fb9d5b532b5f6c6446dae3e955ec444c57b52da2907883358f8f0621fb3e1",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/50.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/6.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/6.png",
+          "bytes": 10015,
+          "sha256": "52abb323987a57da8d6b606621b43f61b1e9961e8d3dc10247819723d5a19282",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/6.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/7.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/7.png",
+          "bytes": 9335,
+          "sha256": "b08f128818997fe0e5baa584837fa2bd59b88bf386cc2d4b83e786dcfbf2b666",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/7.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/8.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/8.png",
+          "bytes": 9777,
+          "sha256": "117fafaee6b21488c199aac167599540540c9f64b33190f5c1cda23521ccdd5a",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/8.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        },
+        {
+          "type": "dataset_annotation",
+          "name": "data/SegmentationClass/9.png",
+          "url": "https://raw.githubusercontent.com/yalan-z/GrainBot-V2/785576283f3af640dc2f8835a465237224104f1d/data/SegmentationClass/9.png",
+          "bytes": 9326,
+          "sha256": "242fb535965001795f06b22b514d934f965ab344b5dfb0bfa9e1eb18100629d0",
+          "source": {
+            "provider": "github",
+            "repository": "yalan-z/GrainBot-V2",
+            "revision": "785576283f3af640dc2f8835a465237224104f1d",
+            "filename": "data/SegmentationClass/9.png"
+          },
+          "anonymous_download_verified": true,
+          "verification": "Read from anonymously downloaded immutable official commit archive",
+          "mirror": false,
+          "license": "No license detected in upstream repository; official-source access only"
+        }
+      ],
+      "official_snapshot_verification": {
+        "url": "https://codeload.github.com/yalan-z/GrainBot-V2/zip/785576283f3af640dc2f8835a465237224104f1d",
+        "bytes": 2742756,
+        "sha256": "49754e433f89654af40470c8736209ef905dc4e3fa1f003f4da0ae3875cdd7f7"
+      },
+      "automatic_activation": false,
+      "recommended": false,
+      "model_weight_download": {
+        "mode": "upstream_instructions",
+        "url": "https://github.com/yalan-z/GrainBot-V2/blob/785576283f3af640dc2f8835a465237224104f1d/README.md",
+        "note": "The original checkpoint is not present in this official repository tree; no download URL is invented."
+      }
+    }
+  ],
+  "release_asset_names": [
+    "dataset-perovskite-boundary-2026.10.14.resources1.zip",
+    "dataset-perovskite-phase-2026.10.14.resources1.zip",
+    "dataset-tbm-2026.10.14.resources1.zip",
+    "dataset-uo2-2026.10.14.resources1.zip",
+    "model-bpartis-2026.10.14.resources1.zip",
+    "uo2-b-2026.10.14.resources1.pt",
+    "uo2-b-syntexp-2026.10.14.resources1.pt",
+    "uo2-ds-2026.10.14.resources1.pt",
+    "uo2-hed-2026.10.14.resources1.pt",
+    "uo2-implementation-2026.10.14.resources1.zip"
+  ],
+  "automatic_activation": false,
+  "signature": {
+    "url": "https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/resource-catalog.sig",
+    "algorithm": "Ed25519",
+    "encoding": "base64",
+    "signed_bytes": "exact UTF-8 resource-catalog.json bytes"
+  },
+  "metadata_storage": {
+    "provider": "git",
+    "repository": "kzhoujlu/GrainBot-resources",
+    "revision": "metadata-2026.10.14.resources1",
+    "directory": "metadata/2026.10.14.resources1",
+    "minimum_maintenance_version": "0.2.5"
+  }
+}

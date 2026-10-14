@@ -1,0 +1,89 @@
+{
+  "component": "model-bpartis",
+  "version": "2026.10.14.resources1",
+  "kind": "model",
+  "api_version": 1,
+  "name": "EMPS BPartIS Official Adapter",
+  "archive": "model-bpartis-2026.10.14.resources1.zip",
+  "sha256": "33c2532cceede96e4a4d7461c350869bb8b5a596e009ccdf420414d68c8dd1bd",
+  "files": {
+    "payload/NOTICE.txt": "63b1d22ac9dbc5545471431afc629f48a4fbed990b6f3dd2ed6cc2573eb949a3",
+    "payload/adapter.py": "67fcdd7803474da4983a30589be5225220d06904c17553aa63f92b3c3d29a801",
+    "selftest.py": "b2d88d4f91ed99882545f52faa92aeb70be2403c0dd5a358414a4581552e8f5d"
+  },
+  "model_id": "emps-bpartis-official-v1",
+  "description": "Reviewed MC30 BPartIS adapter; unchanged upstream weights acquired separately.",
+  "license": "LicenseRef-GrainBot-Project; upstream resources MIT",
+  "resources": [
+    {
+      "target": "payload/external/imagedataextractor/models/seg-model.pt",
+      "sha256": "02b8224a95dc0e9b02c83200a7375e733abd91ac67a332bf887d3b2e00a85585",
+      "source": {
+        "provider": "github",
+        "repository": "by256/imagedataextractor",
+        "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+        "filename": "imagedataextractor/models/seg-model.pt"
+      },
+      "license": "MIT; Batuhan Yildirim, 2020"
+    },
+    {
+      "target": "payload/external/imagedataextractor/segment/cluster.py",
+      "sha256": "7ddeae0838647c8bf6306413fea871ee6b6461ae4a313162d24144bfad891564",
+      "source": {
+        "provider": "github",
+        "repository": "by256/imagedataextractor",
+        "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+        "filename": "imagedataextractor/segment/cluster.py"
+      },
+      "license": "MIT; Batuhan Yildirim, 2020"
+    },
+    {
+      "target": "payload/external/imagedataextractor/segment/model.py",
+      "sha256": "2cc9621831ecab7ed17c613aea3f9ef455e162686b4e69617838120270c0c893",
+      "source": {
+        "provider": "github",
+        "repository": "by256/imagedataextractor",
+        "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+        "filename": "imagedataextractor/segment/model.py"
+      },
+      "license": "MIT; Batuhan Yildirim, 2020"
+    },
+    {
+      "target": "payload/external/imagedataextractor/segment/nnmodules.py",
+      "sha256": "07f631989e8dde1d3073a7cb58eb1adcbba320b989dbd10f0bc2471fc0ac3ca4",
+      "source": {
+        "provider": "github",
+        "repository": "by256/imagedataextractor",
+        "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+        "filename": "imagedataextractor/segment/nnmodules.py"
+      },
+      "license": "MIT; Batuhan Yildirim, 2020"
+    },
+    {
+      "target": "payload/external/imagedataextractor/segment/uncertainty.py",
+      "sha256": "d5e97435fa163a076cb3df428290f3f297e2821122c726da019c0bf0308a2ee2",
+      "source": {
+        "provider": "github",
+        "repository": "by256/imagedataextractor",
+        "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+        "filename": "imagedataextractor/segment/uncertainty.py"
+      },
+      "license": "MIT; Batuhan Yildirim, 2020"
+    },
+    {
+      "target": "payload/external/LICENSE",
+      "sha256": "a5e07317e7f0f4e9e3478d977e02c9add1dd592a82bf757a8e5403d9a0eb6322",
+      "source": {
+        "provider": "github",
+        "repository": "by256/imagedataextractor",
+        "revision": "8a3a100521005ea31eff59fada388432c418d8d6",
+        "filename": "LICENSE"
+      },
+      "license": "MIT; Batuhan Yildirim, 2020"
+    }
+  ],
+  "weights_bundled": false,
+  "upstream_code_bundled": false,
+  "publication_authorization": "User requested publication on 2026-10-12",
+  "automatic_promotion": false
+}

@@ -1,0 +1,11 @@
+GrainBot resource storage contract
+
+Maintenance 0.2.5+ reads the release metadata marker, verifies the index SHA256, and fetches component manifests/signatures from an immutable Git commit. Only archives and standalone weights remain release assets. API version 1 component contents and upstream resource pins are unchanged.
+
+Public downloads require no token, private key, or mandatory user-configured public key. Existing configured publisher keys continue to require valid signatures. Archives and individual files retain their SHA256 checks.
+
+Catalog: https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/resource-catalog.json
+Signature: https://raw.githubusercontent.com/kzhoujlu/GrainBot-resources/metadata-2026.10.14.resources1/metadata/2026.10.14.resources1/resource-catalog.sig
+Public key: MoVe3/7LcXOFzcMdlQgFMqRir4usKxT1FFn4hehhuxw=
+
+Official-source-only entries are not mirrored datasets. Preserve upstream terms, train/test groupings and the TBM training block. Software installation does not accept scientific model quality. The original 316L eight-image subset is a demonstration subset, not a sealed test dataset.

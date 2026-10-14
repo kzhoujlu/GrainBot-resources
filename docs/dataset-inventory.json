@@ -1,0 +1,292 @@
+{
+  "date": "2026-10-14",
+  "datasets": [
+    {
+      "id": "316l-artificial-and-real-grains",
+      "name": "316L Artificial and Real Grains",
+      "role": "source",
+      "registered_samples": 1280,
+      "paired_labels": 1280,
+      "split_counts": {
+        "unassigned": 1280
+      },
+      "parents": [],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "emps-electron-microscopy-particles-official",
+      "name": "EMPS Electron Microscopy Particle Instances (465)",
+      "role": "source",
+      "registered_samples": 465,
+      "paired_labels": 465,
+      "split_counts": {
+        "train": 366,
+        "test": 99
+      },
+      "parents": [],
+      "export_compatibility": "verified"
+    },
+    {
+      "id": "exone-316l-grains-500",
+      "name": "ExONE 316L Grains 500×",
+      "role": "source",
+      "registered_samples": 336,
+      "paired_labels": 336,
+      "split_counts": {
+        "unassigned": 336
+      },
+      "parents": [],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "grainbot-v2-afm-official",
+      "name": "GrainBot-V2 AFM Grain Boundaries",
+      "role": "source",
+      "registered_samples": 7,
+      "paired_labels": 7,
+      "split_counts": {
+        "train": 7
+      },
+      "parents": [],
+      "export_compatibility": "legacy_manifest"
+    },
+    {
+      "id": "grainbot-v2-repository-data-official",
+      "name": "GrainBot-V2 Official Repository Training Set",
+      "role": "source",
+      "registered_samples": 50,
+      "paired_labels": 50,
+      "split_counts": {
+        "train": 50
+      },
+      "parents": [],
+      "export_compatibility": "legacy_manifest"
+    },
+    {
+      "id": "patrick-bf-tem-grain-boundaries-2023",
+      "name": "Patrick BF-TEM Aluminum Grain Boundaries (522)",
+      "role": "source",
+      "registered_samples": 522,
+      "paired_labels": 379,
+      "split_counts": {
+        "train": 299,
+        "validation": 80,
+        "test": 143
+      },
+      "parents": [],
+      "export_compatibility": "legacy_manifest"
+    },
+    {
+      "id": "texture-boundary-in-metallography-tbm",
+      "name": "Texture Boundary in Metallography (TBM)",
+      "role": "source",
+      "registered_samples": 320,
+      "paired_labels": 320,
+      "split_counts": {
+        "unassigned": 320
+      },
+      "parents": [],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "uo2-sem-bse-grain-boundaries",
+      "name": "UO2 SEM-BSE Grain Boundaries",
+      "role": "source",
+      "registered_samples": 37,
+      "paired_labels": 37,
+      "split_counts": {
+        "unassigned": 37
+      },
+      "parents": [],
+      "export_compatibility": "verified"
+    },
+    {
+      "id": "3d-sem-ceramic-phase-segmentation",
+      "name": "3D-SEM Ceramic Phase Segmentation",
+      "role": "source_only",
+      "registered_samples": 0,
+      "paired_labels": 0,
+      "split_counts": {},
+      "parents": [],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "perovskite-prior-sem-material-phase-v1",
+      "name": "Perovskite Material Phase Training Snapshot v1 (82 images)",
+      "role": "snapshot",
+      "registered_samples": 82,
+      "paired_labels": 82,
+      "split_counts": {
+        "train": 66,
+        "validation": 8,
+        "test": 8
+      },
+      "parents": [
+        "perovskite-prior-sem-2026"
+      ],
+      "export_compatibility": "verified"
+    },
+    {
+      "id": "perovskite-original-phase-boundaries-v2",
+      "name": "Perovskite Original-Phase Grain Boundary Training Snapshot v2 (82 images)",
+      "role": "snapshot",
+      "registered_samples": 82,
+      "paired_labels": 82,
+      "split_counts": {
+        "train": 66,
+        "validation": 8,
+        "test": 8
+      },
+      "parents": [
+        "perovskite-prior-sem-2026"
+      ],
+      "export_compatibility": "verified"
+    },
+    {
+      "id": "grainbot-v2-sem-type1-official",
+      "name": "GrainBot-V2 SEM Type 1 Pores",
+      "role": "weak_reference",
+      "registered_samples": 8,
+      "paired_labels": 8,
+      "split_counts": {
+        "train": 8
+      },
+      "parents": [
+        "GrainBot-V2 official SEM images and grain-boundary labels"
+      ],
+      "export_compatibility": "legacy_manifest"
+    },
+    {
+      "id": "grainbot-v2-sem-type2-official",
+      "name": "GrainBot-V2 SEM Type 2 Pores",
+      "role": "weak_reference",
+      "registered_samples": 8,
+      "paired_labels": 8,
+      "split_counts": {
+        "train": 8
+      },
+      "parents": [
+        "GrainBot-V2 official SEM images and grain-boundary labels"
+      ],
+      "export_compatibility": "legacy_manifest"
+    },
+    {
+      "id": "grainbot-v2-sem-pores-combined-official",
+      "name": "GrainBot-V2 SEM Pores · Type 1 + Type 2",
+      "role": "subset",
+      "registered_samples": 16,
+      "paired_labels": 16,
+      "split_counts": {
+        "train": 16
+      },
+      "parents": [
+        "grainbot-v2-sem-type1-official",
+        "grainbot-v2-sem-type2-official"
+      ],
+      "export_compatibility": "legacy_manifest"
+    },
+    {
+      "id": "exone-316l-grains-500-field-review",
+      "name": "ExONE 316L · full-field expert review",
+      "role": "review",
+      "registered_samples": 21,
+      "paired_labels": 0,
+      "split_counts": {
+        "unassigned": 21
+      },
+      "parents": [
+        "exone-316l-grains-500"
+      ],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "powder3",
+      "name": "Local user collection",
+      "role": "collection",
+      "registered_samples": 1,
+      "paired_labels": 1,
+      "split_counts": {
+        "unassigned": 1
+      },
+      "parents": [],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "powder",
+      "name": "Local user collection",
+      "role": "collection",
+      "registered_samples": 3,
+      "paired_labels": 3,
+      "split_counts": {
+        "unassigned": 3
+      },
+      "parents": [],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "powder-2",
+      "name": "Local user collection",
+      "role": "collection",
+      "registered_samples": 2,
+      "paired_labels": 2,
+      "split_counts": {
+        "unassigned": 2
+      },
+      "parents": [],
+      "export_compatibility": "registry_or_preparation_only"
+    },
+    {
+      "id": "grainbot-316l-rg-examples",
+      "name": "316L RG Demonstration Subset (8)",
+      "role": "demonstration",
+      "registered_samples": 8,
+      "paired_labels": 8,
+      "split_counts": {
+        "unassigned": 8
+      },
+      "parents": [
+        "316l-artificial-and-real-grains"
+      ],
+      "export_compatibility": "verified"
+    },
+    {
+      "id": "prior-guided-perovskite-sem-segmentation",
+      "name": "Archived - Prior-Guided Perovskite Phase Semantic v1",
+      "role": "archived",
+      "registered_samples": 82,
+      "paired_labels": 82,
+      "split_counts": {
+        "unassigned": 82
+      },
+      "parents": [],
+      "export_compatibility": "verified"
+    }
+  ],
+  "historical_versions": [
+    {
+      "id": "prior-guided-perovskite-approved-boundaries-v1",
+      "samples": 18
+    },
+    {
+      "id": "prior-guided-perovskite-export-boundary-v4",
+      "samples": 25
+    },
+    {
+      "id": "prior-guided-perovskite-grain-boundaries-derived-v1",
+      "samples": 82
+    },
+    {
+      "id": "prior-guided-perovskite-phases-corrected",
+      "samples": 82
+    },
+    {
+      "id": "uo2-sem-bse-grain-boundaries-legacy-copy",
+      "samples": 37
+    }
+  ],
+  "notes": [
+    "Local user images and annotations are not included.",
+    "Image count overlaps must not be summed as independent source images.",
+    "Six legacy manifests need export-format adaptation; file completeness does not establish scientific effectiveness."
+  ]
+}
