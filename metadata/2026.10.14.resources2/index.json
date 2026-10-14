@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "release_tag": "2026.10.14.resources2",
+  "components": [
+    {
+      "component": "dataset-emps-original",
+      "name": "EMPS Original Particle Instance Dataset",
+      "kind": "dataset",
+      "version": "2026.10.14.resources2",
+      "files": {
+        "dataset-emps-original.manifest.json": "21fd3ae40782fd22f1bd99de26c89d921efd448f344821e7f2ee0ce658217e81",
+        "dataset-emps-original.manifest.sig": "a8e36a9ac300aa956c30b5704f645cf56efaa13a678eb7ce6f5690a3abee8d25"
+      },
+      "assets": [
+        {
+          "name": "dataset-emps-original-2026.10.14.resources2.zip",
+          "bytes": 121331638,
+          "sha256": "e1c01d53aedeba42c6462245395d2205da889ef5c186d51c0d9dcc260e0f9f7d"
+        }
+      ],
+      "requires_application_version": "2026.10.14.post3"
+    },
+    {
+      "component": "dataset-exone-316l-original",
+      "name": "ExONE 316L Original Crops and Weak References",
+      "kind": "dataset",
+      "version": "2026.10.14.resources2",
+      "files": {
+        "dataset-exone-316l-original.manifest.json": "97bc787c0e845d266a185b79028a9358b2885315e06f98e875e1cbf25cf3286c",
+        "dataset-exone-316l-original.manifest.sig": "dd7f3f5c471d0f411cecd25e745c5f1f4fa1baf7bf3e7d42bfa8048412022c78"
+      },
+      "assets": [
+        {
+          "name": "dataset-exone-316l-original-2026.10.14.resources2.zip",
+          "bytes": 99344982,
+          "sha256": "fcb6ae304ef27697b6cf0d16a7aec333227d22c2d062948abba335668c5e63b1"
+        }
+      ],
+      "requires_application_version": "2026.10.14.post3"
+    }
+  ]
+}
