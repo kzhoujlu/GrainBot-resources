@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "release_tag": "2026.10.15.resources3",
+  "files": {
+    "model.json": "80d6ee22bc0bfd67c7280a17cda570fdbd91e020e0678e43369fb727bfef7e16",
+    "README.md": "65fadf9e5ef7a3111262cfd68f4982cf091ca8050053d0b87c9ebbfb1997fedc"
+  }
+}

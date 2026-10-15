@@ -1,0 +1,10 @@
+{
+  "id": "grainbot-unet",
+  "revision": "3c9c5bce4bc04487781245bfbf3c30de0dd4e161265a79da8dec20b3177f1ee5",
+  "asset": "grainbot-unet-3c9c5bce.pth",
+  "bytes": 128437216,
+  "sha256": "3c9c5bce4bc04487781245bfbf3c30de0dd4e161265a79da8dec20b3177f1ee5",
+  "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources3/grainbot-unet-3c9c5bce.pth",
+  "installation_path": "models/grainbot-unet/unet.pth",
+  "scientific_acceptance": false
+}
