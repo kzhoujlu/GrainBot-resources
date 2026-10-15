@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "model_id": "grainbot-unet",
+      "handler": "recipe",
+      "backend_id": "grainbot-unet",
+      "version": "2026.10.15.resources3",
+      "requires_application": "2026.10.15.post11",
+      "origin": "self_developed",
+      "weight": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources3/grainbot-unet-3c9c5bce.pth",
+        "path": "grainbot-unet/unet.pth",
+        "sha256": "3c9c5bce4bc04487781245bfbf3c30de0dd4e161265a79da8dec20b3177f1ee5",
+        "bytes": 128437216
+      }
+    },
+    {
+      "model_id": "sem-pore-aspp-instance-balanced-v1",
+      "handler": "recipe",
+      "backend_id": "trained:sem-pore-aspp-instance-balanced-v1",
+      "version": "2026.10.15.resources5",
+      "requires_application": "2026.10.15.post11",
+      "origin": "self_developed",
+      "weight": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources5/sem-pore-aspp-instance-balanced-v1-2026.10.15.resources5.zip",
+        "path": "sem-pore-aspp-instance-balanced-v1/model.torchscript.pt",
+        "sha256": "d6afefb457062da91e07fdb8d7f23d07b794035a9cbdd05cce2ba9b8de819762",
+        "bytes": 66548917
+      },
+      "archive": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources5/sem-pore-aspp-instance-balanced-v1-2026.10.15.resources5.zip",
+        "path": ".download-cache/sem-pore-aspp-instance-balanced-v1-2026.10.15.resources5.zip",
+        "sha256": "95c1bddc974665be17bc11e51c909f5c5021c0f392a8be54ab8b4ff4a48e5c4d",
+        "bytes": 61568489
+      },
+      "files": [
+        {
+          "path": "sem-pore-aspp-instance-balanced-v1/model.json",
+          "sha256": "137ec94524ded0565f05150c9e4e2bc546e570075ff277716b220c457da37a71",
+          "bytes": 7909
+        },
+        {
+          "path": "sem-pore-aspp-instance-balanced-v1/model.torchscript.pt",
+          "sha256": "d6afefb457062da91e07fdb8d7f23d07b794035a9cbdd05cce2ba9b8de819762",
+          "bytes": 66548917
+        },
+        {
+          "path": "sem-pore-aspp-instance-balanced-v1/report.json",
+          "sha256": "044806090c5c5d549372033b5cd9ae68c3c06ed2e624603a9a0b123b68067a8d",
+          "bytes": 5984
+        },
+        {
+          "path": "sem-pore-aspp-instance-balanced-v1/label-correction-provenance.json",
+          "sha256": "f302af92f5e6eb2c5f94696e09eb42d29707ad4d8b51cebce296fbfb8a3d6fa5",
+          "bytes": 3834
+        },
+        {
+          "path": "sem-pore-aspp-instance-balanced-v1/README.txt",
+          "sha256": "ce3512bb2db31216a09e205ea3c8dece97640844959f1970c4002ec2d0171efe",
+          "bytes": 536
+        }
+      ]
+    },
+    {
+      "model_id": "bf-tem-patrick-official",
+      "handler": "recipe",
+      "backend_id": "bf-tem-patrick-official",
+      "version": "2026.10.15.resources6",
+      "requires_application": "2026.10.15.post11",
+      "origin": "official",
+      "weight": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources6/bf-tem-patrick-official-2026.10.15.resources6.zip",
+        "path": "patrick-bf-tem-official/unet_grain_nouveaux_pretune.hdf5",
+        "sha256": "5a764c8155c50a359190655d5b18c8b199f5c69daba40dc8c9979174d17eef7b",
+        "bytes": 372613120
+      },
+      "archive": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources6/bf-tem-patrick-official-2026.10.15.resources6.zip",
+        "path": ".download-cache/bf-tem-patrick-official-2026.10.15.resources6.zip",
+        "sha256": "c24531badb84a17fe8cb5ca481400c2f930c3f8d51de2b67599f0691d95c0ba7",
+        "bytes": 350368354
+      },
+      "files": [
+        {
+          "path": "patrick-bf-tem-official/unet_grain_nouveaux_pretune.hdf5",
+          "sha256": "5a764c8155c50a359190655d5b18c8b199f5c69daba40dc8c9979174d17eef7b",
+          "bytes": 372613120
+        },
+        {
+          "path": "patrick-bf-tem-official/official-model.json",
+          "sha256": "fcde3794960457c855fc97187278b636ca785612e08bc737b135e4bdfb2c6457",
+          "bytes": 725
+        }
+      ]
+    },
+    {
+      "model_id": "perovskite-material-phase-yolov8x-instance-v1",
+      "handler": "recipe",
+      "backend_id": "matmorph:perovskite-material-phase-yolov8x-instance-v1",
+      "version": "2026.10.15.resources6",
+      "requires_application": "2026.10.15.post11",
+      "origin": "self_developed",
+      "weight": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources6/perovskite-material-phase-yolov8x-instance-v1-2026.10.15.resources6.zip",
+        "path": "material-phase/perovsegnet-yolov8x/model.pt",
+        "sha256": "e61b34c28eee15e1632f9292910bb7824624e7edb02bde189621e52cbc01b8c3",
+        "bytes": 143956100
+      },
+      "archive": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources6/perovskite-material-phase-yolov8x-instance-v1-2026.10.15.resources6.zip",
+        "path": ".download-cache/perovskite-material-phase-yolov8x-instance-v1-2026.10.15.resources6.zip",
+        "sha256": "8aed833970338225d655ffbcfaf9248b79ee50d53e5f8fec0d6836f5ca85fb62",
+        "bytes": 131809568
+      },
+      "files": [
+        {
+          "path": "material-phase/perovsegnet-yolov8x/model.pt",
+          "sha256": "e61b34c28eee15e1632f9292910bb7824624e7edb02bde189621e52cbc01b8c3",
+          "bytes": 143956100
+        },
+        {
+          "path": "material-phase/perovsegnet-yolov8x/bundle.json",
+          "sha256": "75137f0340dd24c9f6d0f7ca7f543220d08b3f30bc6e8092ae7555c032477b5b",
+          "bytes": 2076
+        }
+      ]
+    },
+    {
+      "model_id": "grainbot-316l-deeplab-distilled-v1",
+      "handler": "recipe",
+      "backend_id": "grainbot-316l-deeplab-distilled-v1",
+      "version": "2026.10.15.resources6",
+      "requires_application": "2026.10.15.post11",
+      "origin": "self_developed",
+      "weight": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources6/grainbot-316l-deeplab-distilled-v1-2026.10.15.resources6.zip",
+        "path": "boundary/deeplabv3plus-resnet18-316l-rg-distilled-v1/model.torchscript.pt",
+        "sha256": "e960c1cd1ec0589e92c852d5800b93fa450ed0a3ff80aa3c3694dec710f78f40",
+        "bytes": 49313877
+      },
+      "archive": {
+        "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources6/grainbot-316l-deeplab-distilled-v1-2026.10.15.resources6.zip",
+        "path": ".download-cache/grainbot-316l-deeplab-distilled-v1-2026.10.15.resources6.zip",
+        "sha256": "29b14eef6680901a13f9211910e41bf4ead8c0826749c4e2281c27d3595e4166",
+        "bytes": 45708774
+      },
+      "files": [
+        {
+          "path": "boundary/deeplabv3plus-resnet18-316l-rg-distilled-v1/model.torchscript.pt",
+          "sha256": "e960c1cd1ec0589e92c852d5800b93fa450ed0a3ff80aa3c3694dec710f78f40",
+          "bytes": 49313877
+        },
+        {
+          "path": "boundary/deeplabv3plus-resnet18-316l-rg-distilled-v1/result.json",
+          "sha256": "f666c6bdfd2361ff2eafb646827b4097380b60601d4f6903be05e4c3cf217d11",
+          "bytes": 1542
+        },
+        {
+          "path": "boundary/deeplabv3plus-resnet18-316l-rg-distilled-v1/README.md",
+          "sha256": "e8947472f0969f1d07fcd8a63f56eb6525ea0dad70da4557681b20c1a75b89d3",
+          "bytes": 182
+        }
+      ]
+    },
+    {
+      "model_id": "emps-bpartis-official-v1",
+      "handler": "component",
+      "component": "model-bpartis",
+      "backend_id": "component:model-bpartis",
+      "version": "2026.10.14.resources1",
+      "origin": "official",
+      "requires_application": "2026.10.15.post11",
+      "legacy_weight": {
+        "path": "emps-bpartis-official-v1/official/imagedataextractor/models/seg-model.pt",
+        "bytes": 9195219,
+        "sha256": "02b8224a95dc0e9b02c83200a7375e733abd91ac67a332bf887d3b2e00a85585"
+      },
+      "legacy_files": [
+        {
+          "path": "emps-bpartis-official-v1/model.json",
+          "bytes": 2766,
+          "sha256": "17af6e9d519daf2b2dfa38dee8e117730ccf3cb494d0f31aab121013b8489daf"
+        },
+        {
+          "path": "emps-bpartis-official-v1/official/LICENSE",
+          "bytes": 1073,
+          "sha256": "a5e07317e7f0f4e9e3478d977e02c9add1dd592a82bf757a8e5403d9a0eb6322"
+        },
+        {
+          "path": "emps-bpartis-official-v1/official/imagedataextractor/models/seg-model.pt",
+          "bytes": 9195219,
+          "sha256": "02b8224a95dc0e9b02c83200a7375e733abd91ac67a332bf887d3b2e00a85585"
+        },
+        {
+          "path": "emps-bpartis-official-v1/official/imagedataextractor/segment/cluster.py",
+          "bytes": 3490,
+          "sha256": "7ddeae0838647c8bf6306413fea871ee6b6461ae4a313162d24144bfad891564"
+        },
+        {
+          "path": "emps-bpartis-official-v1/official/imagedataextractor/segment/model.py",
+          "bytes": 5026,
+          "sha256": "2cc9621831ecab7ed17c613aea3f9ef455e162686b4e69617838120270c0c893"
+        },
+        {
+          "path": "emps-bpartis-official-v1/official/imagedataextractor/segment/nnmodules.py",
+          "bytes": 6058,
+          "sha256": "07f631989e8dde1d3073a7cb58eb1adcbba320b989dbd10f0bc2471fc0ac3ca4"
+        },
+        {
+          "path": "emps-bpartis-official-v1/official/imagedataextractor/segment/uncertainty.py",
+          "bytes": 1048,
+          "sha256": "d5e97435fa163a076cb3df428290f3f297e2821122c726da019c0bf0308a2ee2"
+        }
+      ]
+    }
+  ]
+}
