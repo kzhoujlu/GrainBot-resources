@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "type": "existing_model_archives",
+  "release_tag": "2026.10.15.resources6",
+  "files": {
+    "models.json": "0b1b3eab542664ca5e481ce156811d1f09065db28bee2822b50dc5596bcb5a73",
+    "README.md": "73a33e7d57e5d3f99cbff3e014e23e9d08965a9b856505e65339636e82776004"
+  },
+  "assets": [
+    {
+      "name": "bf-tem-patrick-official-2026.10.15.resources6.zip",
+      "bytes": 350368354,
+      "sha256": "c24531badb84a17fe8cb5ca481400c2f930c3f8d51de2b67599f0691d95c0ba7"
+    },
+    {
+      "name": "perovskite-material-phase-yolov8x-instance-v1-2026.10.15.resources6.zip",
+      "bytes": 131809568,
+      "sha256": "8aed833970338225d655ffbcfaf9248b79ee50d53e5f8fec0d6836f5ca85fb62"
+    },
+    {
+      "name": "grainbot-316l-deeplab-distilled-v1-2026.10.15.resources6.zip",
+      "bytes": 45708774,
+      "sha256": "29b14eef6680901a13f9211910e41bf4ead8c0826749c4e2281c27d3595e4166"
+    }
+  ]
+}

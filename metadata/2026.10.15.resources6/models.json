@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "type": "existing_model_archives",
+  "models": [
+    {
+      "model_id": "bf-tem-patrick-official",
+      "backend_id": "bf-tem-patrick-official",
+      "task": "grain_structure",
+      "archive": {
+        "name": "bf-tem-patrick-official-2026.10.15.resources6.zip",
+        "bytes": 350368354,
+        "sha256": "c24531badb84a17fe8cb5ca481400c2f930c3f8d51de2b67599f0691d95c0ba7"
+      },
+      "destination": "patrick-bf-tem-official",
+      "members": [
+        {
+          "name": "unet_grain_nouveaux_pretune.hdf5",
+          "bytes": 372613120,
+          "sha256": "5a764c8155c50a359190655d5b18c8b199f5c69daba40dc8c9979174d17eef7b"
+        },
+        {
+          "name": "official-model.json",
+          "bytes": 725,
+          "sha256": "fcde3794960457c855fc97187278b636ca785612e08bc737b135e4bdfb2c6457"
+        }
+      ]
+    },
+    {
+      "model_id": "perovskite-material-phase-yolov8x-instance-v1",
+      "backend_id": "matmorph:perovskite-material-phase-yolov8x-instance-v1",
+      "task": "material_phase",
+      "archive": {
+        "name": "perovskite-material-phase-yolov8x-instance-v1-2026.10.15.resources6.zip",
+        "bytes": 131809568,
+        "sha256": "8aed833970338225d655ffbcfaf9248b79ee50d53e5f8fec0d6836f5ca85fb62"
+      },
+      "destination": "material-phase/perovsegnet-yolov8x",
+      "members": [
+        {
+          "name": "model.pt",
+          "bytes": 143956100,
+          "sha256": "e61b34c28eee15e1632f9292910bb7824624e7edb02bde189621e52cbc01b8c3"
+        },
+        {
+          "name": "bundle.json",
+          "bytes": 2076,
+          "sha256": "75137f0340dd24c9f6d0f7ca7f543220d08b3f30bc6e8092ae7555c032477b5b"
+        }
+      ]
+    },
+    {
+      "model_id": "grainbot-316l-deeplab-distilled-v1",
+      "backend_id": "grainbot-316l-deeplab-distilled-v1",
+      "task": "grain_structure",
+      "archive": {
+        "name": "grainbot-316l-deeplab-distilled-v1-2026.10.15.resources6.zip",
+        "bytes": 45708774,
+        "sha256": "29b14eef6680901a13f9211910e41bf4ead8c0826749c4e2281c27d3595e4166"
+      },
+      "destination": "boundary/deeplabv3plus-resnet18-316l-rg-distilled-v1",
+      "members": [
+        {
+          "name": "model.torchscript.pt",
+          "bytes": 49313877,
+          "sha256": "e960c1cd1ec0589e92c852d5800b93fa450ed0a3ff80aa3c3694dec710f78f40"
+        },
+        {
+          "name": "result.json",
+          "bytes": 1542,
+          "sha256": "f666c6bdfd2361ff2eafb646827b4097380b60601d4f6903be05e4c3cf217d11"
+        },
+        {
+          "name": "README.md",
+          "bytes": 182,
+          "sha256": "e8947472f0969f1d07fcd8a63f56eb6525ea0dad70da4557681b20c1a75b89d3"
+        }
+      ]
+    }
+  ],
+  "requires_application_version": "2026.10.15.post9",
+  "scientific_acceptance": false
+}
