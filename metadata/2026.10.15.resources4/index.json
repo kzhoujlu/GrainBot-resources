@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "release_tag": "2026.10.15.resources4",
+  "components": [
+    {
+      "component": "dataset-grainbot-sem-pores",
+      "name": "GrainBot-V2 SEM Pores",
+      "kind": "dataset",
+      "version": "2026.10.15.resources4",
+      "requires_application_version": "2026.10.15.post7",
+      "files": {
+        "dataset-grainbot-sem-pores.manifest.json": "4df268dfa501ecf07bf7a674909187bd3b3e5fcd00b6ac6b8e9dd9d6dd508a80",
+        "dataset-grainbot-sem-pores.manifest.sig": "b6a0c6bed73a27e3cc8f68e64bbfb2d40a49ec3f62cb0d353a1502e758dd29a6"
+      },
+      "assets": [
+        {
+          "name": "dataset-grainbot-sem-pores-2026.10.15.resources4.zip",
+          "bytes": 1221092,
+          "sha256": "1c4550586b1f55d50424be14162f4e120ea7db79054bf48d68fa1c3ccb5ff7d3"
+        }
+      ]
+    }
+  ]
+}
