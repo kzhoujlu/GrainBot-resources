@@ -99,7 +99,7 @@
       "handler": "recipe",
       "backend_id": "matmorph:perovskite-material-phase-yolov8x-instance-v1",
       "version": "2026.10.15.resources6",
-      "requires_application": "2026.10.15.post11",
+      "requires_application": "2026.10.15.post12",
       "origin": "self_developed",
       "weight": {
         "url": "https://github.com/kzhoujlu/GrainBot-resources/releases/download/2026.10.15.resources6/perovskite-material-phase-yolov8x-instance-v1-2026.10.15.resources6.zip",
