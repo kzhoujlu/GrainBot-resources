@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "type": "trained_model_archive",
+  "release_tag": "2026.10.15.resources5",
+  "files": {
+    "model-release.json": "348a2811606c5209fe421b7b7d29f900ec48f18346ab3bad471add3a44364530",
+    "README.md": "369c706af87767f04d3bc79087545dd76f0eccc93d1d94999eb9c31d89b1c0fb"
+  },
+  "assets": [
+    {
+      "name": "sem-pore-aspp-instance-balanced-v1-2026.10.15.resources5.zip",
+      "bytes": 61568489,
+      "sha256": "95c1bddc974665be17bc11e51c909f5c5021c0f392a8be54ab8b4ff4a48e5c4d"
+    }
+  ]
+}

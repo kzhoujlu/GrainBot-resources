@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "type": "trained_model_archive",
+  "model_id": "sem-pore-aspp-instance-balanced-v1",
+  "backend_id": "trained:sem-pore-aspp-instance-balanced-v1",
+  "tag": "2026.10.15.resources5",
+  "requires_application_version": "2026.10.15.post8",
+  "archive": {
+    "name": "sem-pore-aspp-instance-balanced-v1-2026.10.15.resources5.zip",
+    "bytes": 61568489,
+    "sha256": "95c1bddc974665be17bc11e51c909f5c5021c0f392a8be54ab8b4ff4a48e5c4d"
+  },
+  "members": [
+    {
+      "name": "model.json",
+      "bytes": 7909,
+      "sha256": "137ec94524ded0565f05150c9e4e2bc546e570075ff277716b220c457da37a71"
+    },
+    {
+      "name": "model.torchscript.pt",
+      "bytes": 66548917,
+      "sha256": "d6afefb457062da91e07fdb8d7f23d07b794035a9cbdd05cce2ba9b8de819762"
+    },
+    {
+      "name": "report.json",
+      "bytes": 5984,
+      "sha256": "044806090c5c5d549372033b5cd9ae68c3c06ed2e624603a9a0b123b68067a8d"
+    },
+    {
+      "name": "label-correction-provenance.json",
+      "bytes": 3834,
+      "sha256": "f302af92f5e6eb2c5f94696e09eb42d29707ad4d8b51cebce296fbfb8a3d6fa5"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 536,
+      "sha256": "ce3512bb2db31216a09e205ea3c8dece97640844959f1970c4002ec2d0171efe"
+    }
+  ],
+  "scientific_acceptance": false
+}
